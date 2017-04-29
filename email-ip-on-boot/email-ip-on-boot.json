@@ -1,0 +1,42 @@
+{
+	"name": "email-ip-on-boot.py",
+	"text": "Email IP Address on Boot\\nSMTP Server Settings:\\nFrom Address: %1\\nTo Address: %2\\nUsername: %3\\nPassword: %4\\nServer Address: %5\\nPort Number: %6",
+    "network": true,
+	"continue": true,
+	"type": "other",
+	"category": "other",
+	"shortDescription":"Pi will email you it's IP every time it boots.",
+	"longDescription":"This block will let you Pi email you it's IP address every time it boots up. This will make it much easier to find on your network. You'll need to know your email address, your username to your email server, your email password, your email server adderess, and the port your email server uses. This block requires network access.",
+	"args": [
+		{
+			"type": "text",
+			"default": "from@yourdomain.com",
+			"maxLength":0
+		},		
+        {
+			"type": "text",
+			"default": "to@yourdomain.com",
+			"maxLength":0
+		},
+		{
+			"type": "text",
+			"default": "your email user name",
+			"maxLength":0
+		},
+		{
+			"type": "text",
+			"default": "your email password",
+			"maxLength":0
+		},
+		{
+			"type": "text",
+			"default": "email server address",
+			"maxLength":0
+		},
+		{
+			"type": "number",
+			"default": "587",
+			"maxLength":4
+		}
+	]
+}
